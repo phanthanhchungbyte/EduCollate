@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduCollate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href=""><span id="prefix">Edu</span>Collate</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search"></i>
+      </div>
+      <nav>
+        <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#" class="nav-link"><i class="fas fa-upload"></i> Upload</a>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-user"></i> Dang</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-user-circle"></i> Profile</a
+            >
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-cog"></i> Settings</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-sign-out-alt"></i> Logout</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="col-3">
+          <div class="user-info">
+            <img src="avatar.jpg" alt="User Avatar" />
+            <span>Chau Tung Dang</span>
+          </div>
+          <div class="sidebar-links">
+            <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="#"><i class="fas fa-book"></i> Library</a>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+            <button class="create-post">
+              <i class="fas fa-plus"></i> Create Post
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="post">
+            <div class="user-info">
+              <img src="avatar.jpg" alt="User Avatar" />
+              <span>Nhat Chau</span>
+              <button class="follow-btn">Follow</button>
+              <span class="more-options">...</span>
+            </div>
+            <div class="post-content">
+              <span class="post-time">9h · PRJ211</span>
+              <div class="file-preview">
+                <i class="fas fa-file-pdf"></i>
+                <span
+                  >Professional_Java_for_Web_Applications_Nicholas_S_Williams</span
+                >
+                <span>50mb</span>
+              </div>
+            </div>
+            <div class="interactions">
+              <button><i class="fas fa-thumbs-up"></i> Likes</button>
+              <button><i class="fas fa-comment"></i> Comments</button>
+              <button><i class="fas fa-download"></i> Downloads</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <h3>Who to Follow</h3>
+            <div class="user-info">
+              <img src="avatar.jpg" alt="User Avatar" />
+              <span>Nhat Chau</span>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="user-info">
+              <img src="avatar.jpg" alt="User Avatar" />
+              <span>Chung guy</span>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <a href="#" class="see-more">See more...</a>
+          </div>
+          <div class="card">
+            <h3>Continue Reading</h3>
+            <div class="reading-item">
+              <span>Foundation of computer sciences</span>
+              <span>Chung guy</span>
+            </div>
+            <div class="reading-item">
+              <span>Java 8 in action</span>
+              <span>Chung guy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="commentModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-header">
+          <div class="user-info">
+            <img src="avatar.jpg" alt="User Avatar" />
+            <span>Nhat Chau</span>
+            <button class="follow-btn">Follow</button>
+            <span class="more-options">...</span>
+          </div>
+          <span class="post-time">9h · PR/211</span>
+        </div>
+        <div class="file-preview">
+          <i class="fas fa-file-pdf"></i>
+          <span
+            >Professional_Java_for_Web_Applications_Nicholas_S_Williams</span
+          >
+          <span>50mb</span>
+        </div>
+        <div class="comment-section">
+          <input
+            type="text"
+            placeholder="Add a comment"
+            class="comment-input"
+          />
+          <div class="comment">
+            <div class="user-info">
+              <img src="avatar.jpg" alt="User Avatar" />
+              <span>Chung guy</span>
+              <button class="follow-btn">Follow</button>
+              <span class="more-options">...</span>
+              <span class="comment-time">7h ago</span>
+            </div>
+            <p class="comment-text">Hay quá!</p>
+            <div class="comment-interactions">
+              <button><i class="fas fa-thumbs-up"></i> Likes</button>
+              <button><i class="fas fa-comment"></i> Comments</button>
+              <button><i class="fas fa-share"></i> Shares</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
